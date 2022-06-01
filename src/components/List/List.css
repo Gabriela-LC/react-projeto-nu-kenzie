@@ -1,0 +1,74 @@
+
+/* .containerListTransactions{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+} */
+
+.headerListTransactions{
+    width: 100%;
+    height: 40px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+
+}
+
+.headerListTransactions h4{
+    margin: 0;
+    font-weight: 700;
+    font-size: 16px;
+    color: #212529;
+    line-height: 30px;
+
+}
+
+.btnsListTransactions{
+    display: flex;
+    gap:16px;
+
+}
+
+.btnsListTransactions button{
+    box-sizing: border-box;
+    height: 100%;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10.5px 15px;
+    background: #E9ECEF;
+    border: 1.4px solid #E9ECEF;
+    border-radius: 8px;
+
+}
+
+.btnsListTransactions button:hover{
+    border: 1.4px solid #5B6166;
+    background: #5B6166;
+    color: #F8F9FA;
+    cursor: pointer;
+}
+
+#btnSelecionado{
+    background: #FD377E;
+    color: #FFFFFF;     
+    border: 1.4px solid #FD377E;
+}
+
+@media (max-width: 650px){
+
+    .headerListTransactions{
+        height: min-content;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    @media (max-width: 400px){
+        .btnsListTransactions{
+            gap:7px;
+        
+        }
+
+    }
+}

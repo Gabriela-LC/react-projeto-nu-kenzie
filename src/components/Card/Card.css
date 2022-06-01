@@ -1,0 +1,60 @@
+.cardTransaction{
+    box-sizing: border-box;
+    width: 100%;
+    height: 87px;
+    background: #F8F9FA;
+    border-radius: 4px;
+    border-left: 4px solid #E9ECEF;
+    margin-bottom: 32px;
+    padding: 18px;
+}
+
+.cardTransaction:hover{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 42px -12px rgba(0, 0, 0, 0.25);
+}
+
+.cardTransaction__entrada{
+    border-left: 4px solid #03B898;
+}
+
+.cardTransaction div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardTransaction h4{
+    margin: 0;
+    font-weight: 700;
+    font-size: 16px;
+    color: #212529;
+    text-transform: capitalize;
+}
+
+.cardTransaction p{
+    font-weight: 400;
+    font-size: 12px;
+    color: #212529;
+}
+
+.cardTransaction span{
+    color: #5B6166;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.cardTransaction button{
+    width: 22px;
+    height: 22px;
+    border: none;
+    background: #E9ECEF;
+    border-radius: 3px;
+}
+
+.cardTransaction button:hover{
+    background: #5B6166;
+    fill: white;
+    cursor: pointer;
+}

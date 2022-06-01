@@ -1,0 +1,70 @@
+*{
+  box-sizing: border-box;
+}
+.App {
+  width: 100vw;
+}
+
+main{
+  width: 100vw;
+  padding: 39px 15%;
+  display: flex;
+  justify-content: space-between;
+}
+
+aside{
+  width: 360px;
+  min-width: 340px;
+  margin-right: 15px;
+}
+
+.Lista{
+  width: 560px;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+@media (max-width: 1149px){
+
+  main{
+    flex-wrap: wrap;
+  }
+
+  aside{
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  .Lista{
+    margin-top: 20px;
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 650px){
+
+  main{
+    padding: 39px 13%;
+
+  }
+
+  aside{
+    min-width: 280px;
+
+  }
+
+}
+
+@media (max-width: 400px){
+  
+  main{
+    padding: 39px 7%;
+
+  }
+  aside{
+    min-width: 220px;
+
+  }
+}
+

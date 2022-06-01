@@ -1,0 +1,31 @@
+
+header{
+    width: 100vw;
+    height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15%;
+    background-color: #F8F9FA;
+    box-shadow: 0px 4px 32px -12px #00000040;
+
+}
+
+header button{
+    background-color: #E9ECEF;
+    width: 64px;
+    height: 40px;
+    border: 1.4px solid #E9ECEF;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #5B6166;
+}
+
+header button:hover{
+    border: 1.4px solid #5B6166;
+    background: #5B6166;
+    color: #F8F9FA;
+    cursor: pointer;
+}
+    
