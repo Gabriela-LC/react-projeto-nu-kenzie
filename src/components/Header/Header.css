@@ -11,6 +11,10 @@ header{
 
 }
 
+img{
+    margin: 0;
+}
+
 header button{
     background-color: #E9ECEF;
     width: 64px;

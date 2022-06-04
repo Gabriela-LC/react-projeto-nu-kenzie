@@ -1,0 +1,32 @@
+
+.containerModal{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(0,0,0, .3);
+    inset: 0;
+
+}
+
+.modalBox{
+    padding: 3rem;
+    background: #fff;
+    position: relative;
+    border-radius: 8px;
+}
+
+.closeButton{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: none;
+    background: transparent;
+}
+
+.closeButton:hover{
+    color: #E34981;
+    cursor: pointer;
+}

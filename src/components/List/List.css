@@ -55,6 +55,11 @@
     border: 1.4px solid #FD377E;
 }
 
+ul{
+    list-style: none;
+    padding: 0;
+}
+
 @media (max-width: 650px){
 
     .headerListTransactions{

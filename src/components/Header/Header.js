@@ -1,10 +1,15 @@
 import "./Header.css"
 
-function Header(){
+function Header({setIncialPage}){
+
+
+    function paraPgInicial(){
+        setIncialPage(true)
+    }
     return(
         <header>
             <img src="assets/nukenzie.png" alt="logo"/>
-            <button>Início</button>
+            <button onClick={paraPgInicial}>Início</button>
         </header>
     )
 }

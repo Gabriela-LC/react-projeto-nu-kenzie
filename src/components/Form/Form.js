@@ -2,14 +2,18 @@
 import {useState} from "react"
 import "./Form.css"
 
-function Form({listTransactions, setListTransactions}){
+function Form({setShowModal, listTransactions, setListTransactions}){
 
     const [description, setDescription] = useState("")
-    const [type, setType] = useState("")
+    const [type, setType] = useState("Entrada")
     const [value, setValue] = useState("")
 
 
     function addTransaction(listTransactions,setListTransactions){
+
+        if(description == "" || type == "" || value == ""){
+            setShowModal(true)
+        } else {
 
             const newTran = {
                 description,
@@ -18,6 +22,7 @@ function Form({listTransactions, setListTransactions}){
             }
 
         setListTransactions([newTran, ...listTransactions])
+        }
     }
 
 

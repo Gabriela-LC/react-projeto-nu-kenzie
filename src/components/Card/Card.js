@@ -1,6 +1,6 @@
 import "./Card.css"
 
-function Card({listTransactions, setListTransactions, transaction, key}){
+function Card({listTransactions, setListTransactions, transaction, index}){
 
     function removeTransaction(key){
         console.log(key);
@@ -18,9 +18,8 @@ function Card({listTransactions, setListTransactions, transaction, key}){
             <div className="cardTransaction">
                 <div>
                     <h4>{transaction.description}</h4>
-                    <p>{key}</p>
                     <p>R$ {transaction.value.toFixed(2).replace(".",",")}</p>
-                    <button onClick={(key) =>removeTransaction(key)}><img src="assets/trash.svg" alt="trash"/></button>
+                    <button onClick={() =>removeTransaction(index)}><img src="assets/trash.svg" alt="trash"/></button>
                 </div>
                 <span>{transaction.type}</span>
 
@@ -30,7 +29,7 @@ function Card({listTransactions, setListTransactions, transaction, key}){
                 <div>
                     <h4>{transaction.description}</h4>
                     <p>R$ {transaction.value.toFixed(2).replace(".",",")}</p>
-                    <button onClick={(key) =>removeTransaction(key)}><img src="assets/trash.svg" alt="trash"/></button>
+                    <button onClick={() =>removeTransaction(index)}><img src="assets/trash.svg" alt="trash"/></button>
                 </div>
                 <span>{transaction.type}</span>
                 

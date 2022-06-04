@@ -52,9 +52,14 @@
     background: #E9ECEF;
     border-radius: 3px;
 }
-
+ 
 .cardTransaction button:hover{
     background: #5B6166;
     fill: white;
     cursor: pointer;
+
+}
+
+img:hover path{
+    fill: white
 }

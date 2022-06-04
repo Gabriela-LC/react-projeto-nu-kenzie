@@ -1,46 +1,10 @@
 import "./List.css"
 import Card from "../Card/Card"
-import {useState} from "react"
+import SemTransactions from "../SemTransactions/SemTransactions"
 
-function List({listTransactions, setListTransactions}){
+function List({mostrarTodos, filtraEntradas, filtraSaidas,isTodosSelected, isEntradasSelected, isSaidasSelected, listTransactions, setListTransactions}){
 
-    const [isTodosSelected, setIsTodosSelected] = useState(true)
-    const [isEntradasSelected, setIsEntradasSelected] = useState(false)
-    const [isSaidasSelected, setIsSaidasSelected] = useState(false)
-
-
-    function mostrarTodos(){
-        setIsTodosSelected(true)
-        setIsEntradasSelected(false)
-        setIsSaidasSelected(false)
-
-
-    }
-    function filtraEntradas(){
-
-        setIsTodosSelected(false)
-        setIsEntradasSelected(true)
-        setIsSaidasSelected(false)
-
-
-        const listEntradas = listTransactions.filter((transaction) => {
-            return transaction.type === "Entrada"
-        });
-        
-    }
-
-    function filtraSaidas(){
-
-        setIsTodosSelected(false)
-        setIsEntradasSelected(false)
-        setIsSaidasSelected(true)
-
-        const listSaidas = listTransactions.filter((transaction) => {
-            return transaction.type === "Saída"
-        });
     
-    
-    }
 
     return(
         <>            
@@ -53,11 +17,15 @@ function List({listTransactions, setListTransactions}){
 
                 </div>
             </div>
-            <div className="listaTransactions">
+            {listTransactions.length > 0?
+            <ul className="listaTransactions">
                 {listTransactions.map((transaction, index) => (
-                    <Card listTransactions={listTransactions} setListTransactions={setListTransactions} transaction={transaction} key={index}/>
+                    <li key={index}><Card listTransactions={listTransactions} setListTransactions={setListTransactions} transaction={transaction} index={index}/></li>
                 ))}
-            </div>
+            </ul>
+            :
+            <SemTransactions/>
+            }
         </>
     )
 }
