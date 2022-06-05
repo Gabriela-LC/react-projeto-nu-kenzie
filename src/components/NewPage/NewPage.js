@@ -8,7 +8,7 @@ function NewPage({setIncialPage}){
     return(
         <main className="mainPgInicial">
             <section className="text">
-                <img src="assets/Nukenzie2.png" alt="logo"/>
+                <img src="assets/NuKenzie2.png" alt="logo"/>
                 <h1>Centralize o controle das suas finanças</h1>
                 <p>de forma rápida e segura</p>
                 <button onClick={logar}>Iniciar</button>
